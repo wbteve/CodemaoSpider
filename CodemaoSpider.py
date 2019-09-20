@@ -1,7 +1,15 @@
+#本应用作者by啊不嘟，转载请申明原作
+#本作品github开源地址：https://github.com/am-abudu/codemaospider
+#此应用仅供交流和学习使用，通过此应用获取的资源请在二十四小时内删除
 import requests
 import json
 import os
 
+print('本应用作者by啊不嘟，转载请申明原作')
+print('本作品github开源地址：https://github.com/am-abudu/codemaospider')
+print('此应用仅供交流和学习使用，通过此应用获取的资源请在二十四小时内删除')
+print()
+print('###开始运行###')
 try:
     error_code = '0'
     w_id = input('请输入作品ID：')
@@ -125,13 +133,13 @@ except:
     if error_code == '0':
     	print('请输入正确的ID！')
     elif error_code == '1':
-    	print('BCMC文件获取失败,请输入正确的ID！')
+    	print('BCMC文件获取失败,请输入正确的ID，或检查网络设置！')
     elif error_code == '2':
     	print('图片ID获取失败！')
     	print(bcmc)
     elif error_code == '3':
     	print('音乐ID获取失败！')
     elif error_code == '4':
-    	print('图片下载失败，请检查网络设置！')
+    	print('图片下载失败，请检查网络设置，或尝试管理员模式运行！')
     elif error_code == '5':
-    	print('音乐下载失败，请检查网络设置！')
+    	print('音乐下载失败，请检查网络设置，或尝试管理员模式运行！')
